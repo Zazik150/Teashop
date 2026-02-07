@@ -1,0 +1,292 @@
+
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* FLEXBOX: Шапка сайту */
+        header {
+            background: #4a7c2c;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: background 0.5s ease;
+        }
+
+        header:hover {
+            background: #2d5016;
+        }
+
+        /* FLEXBOX: Контейнер навігації */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Блоковий елемент <div> для логотипу */
+        .logo {
+            display: block;
+            font-size: 28px;
+            font-weight: bold;
+            border: 3px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.4s ease;
+        }
+
+        .logo:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #ffeb3b;
+            color: #ffeb3b;
+        }
+
+        /* FLEXBOX: Навігаційне меню */
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.4s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Герой-секція */
+        .hero {
+            background: #4a7c2c;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+
+        .hero:hover {
+            background: #6fb33f;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Рядковий елемент <span> з класом */
+        .red {
+            display: inline;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        /* Основний контейнер */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Секція з товарами */
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #2d5016;
+            border-bottom: 3px solid #4a7c2c;
+            padding-bottom: 15px;
+            transition: all 0.4s ease;
+        }
+
+        .section-title:hover {
+            color: #6fb33f;
+            border-color: #ffeb3b;
+        }
+
+        /* FLEXBOX: Сітка товарів */
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        /* Картка товару - блоковий елемент <div> */
+        .product-card {
+            display: block;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 25px;
+            width: 280px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(74, 124, 44, 0.4);
+            border-color: #4a7c2c;
+            background: #f0f7ed;
+        }
+
+        /* FLEXBOX: Іконка товару */
+        .product-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 64px;
+            height: 120px;
+            background: #e8f5e0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            color: #2d5016;
+            font-size: 22px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .product-card:hover h3 {
+            color: #6fb33f;
+        }
+
+        .product-card p {
+            color: #666;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .product-card:hover p {
+            color: #333;
+        }
+
+        /* FLEXBOX: Рядок з ціною та кнопкою */
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            transition: border-color 0.3s ease;
+        }
+
+        .product-card:hover .product-footer {
+            border-color: #4a7c2c;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            transition: color 0.4s ease;
+        }
+
+        .product-card:hover .price {
+            color: black;
+        }
+
+        /* Кнопка з display: inline-block */
+        .btn {
+            display: inline-block;
+            background: #4a7c2c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.4s ease;
+        }
+
+        .btn:hover {
+            background: #2d5016;
+            box-shadow: 0 6px 20px rgba(45, 80, 22, 0.5);
+        }
+
+        /* FLEXBOX: Футер */
+        footer {
+            background: #2d5016;
+            color: white;
+            padding: 30px 20px;
+            margin-top: 60px;
+            transition: background 0.5s ease;
+        }
+
+        footer:hover {
+            background: #1a3010;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .footer-section {
+            display: block;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4a7c2c;
+            padding-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section:hover h4 {
+            border-color: #6fb33f;
+            color: #ffeb3b;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 0;
+            padding: 3px 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #a8d08d;
+        }
+
+        .footer-section li {
+            transition: color 0.3s ease;
+        }
+
+        .footer-section li:hover {
+            color: #6fb33f;
+        }
